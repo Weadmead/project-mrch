@@ -32,6 +32,7 @@ a {
 .btn {
     border: none;
     background-color: $accent;
+    @extend %roboto-400;
     color: #fff;
     text-transform: uppercase;
     padding: 12px 26px;
