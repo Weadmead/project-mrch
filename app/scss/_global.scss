@@ -38,9 +38,11 @@ a {
     padding: 12px 26px;
     cursor: pointer;
     box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+    display: inline-block;
 }
 
 .btn:hover {
     transform: scale(1.02);
     box-shadow: 0px 10px 20px 0px rgba(255, 17, 48, 0.3);
+    
 }
