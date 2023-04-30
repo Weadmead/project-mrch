@@ -46,3 +46,19 @@ a {
     box-shadow: 0px 10px 20px 0px rgba(255, 17, 48, 0.3);
     
 }
+.btn-white
+ {
+    text-transform: uppercase;
+    color: $title;
+    display: inline-block;
+    border: 1px solid $accent;
+    padding: 11px 27px;
+    transition: all .3s;
+    @extend %roboto-400;
+    
+}
+
+.btn-white:hover {
+    color: #fff;
+    background-color: $accent;
+}
