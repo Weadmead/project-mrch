@@ -204,6 +204,19 @@
     }
 }
 
+.top {
+    &__container {
+        max-width: 1700px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        padding: 120px 0 130px;
+        text-align: center;
+    }
+
+}
+
 
 // ** MAIN CONTENT START **
 
@@ -726,6 +739,7 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+
         &::after {
             content: '';
             position: absolute;
@@ -745,6 +759,7 @@
         width: 100%;
         border: 1px solid #ececec;
         transition: all .3s;
+
         &:hover {
             box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
             border: 1px solid #fff;
@@ -811,14 +826,70 @@
         color: $title;
         margin-bottom: 20px;
     }
+
     &__item-link {
         transition: all .3s;
     }
-
-
 }
 
 
+//** START LOG IN PAGE
+
+.modal {
+    padding-top: 100px;
+    width: 570px;
+    margin: 0 auto 115px;
+
+    &__links {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        color: #909090;
+        @extend %roboto-400;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin: 0 30px;
+    }
+
+    &__link--active {
+        color: $accent;
+    }
+
+    &__label {
+        margin-bottom: 30px;
+        display: block;
+
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: $bg;
+        outline-color: #8d8d8d;
+        height: 60px;
+        margin-top: 4px;
+        padding: 0 15px;
+    }
+    &__btn {
+        display: block;
+        width: 100%;
+        background-color: $title;
+        color: #fff;
+        @extend %roboto-400;
+        text-transform: uppercase;
+        padding: 14px 0;
+        border: none;
+        cursor: pointer;
+    }
+    &__lostpassword {
+        display: inline-block;
+        margin-top: 12px;
+        color: $accent;
+    }
+}
 
 
 
