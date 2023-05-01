@@ -833,7 +833,7 @@
 }
 
 
-//** START LOG IN PAGE
+//** START LOG IN  + REGISTER PAGE
 
 .modal {
     padding-top: 100px;
@@ -888,6 +888,9 @@
         display: inline-block;
         margin-top: 12px;
         color: $accent;
+    }
+    &__text {
+        margin-bottom: 25px;
     }
 }
 
