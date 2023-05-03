@@ -1,5 +1,19 @@
 $(function () {
 
+    //grid/line-filter shop page
+
+    $('.shop-content__filter-btn').on('click', function (){
+        $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
+        $(this).addClass('shop-content__filter-btn--active');
+    });
+
+    $('.button-list').on('click', function (){
+        $('.products-item').addClass('products-item--list');
+    });
+    $('.button-grid').on('click', function (){
+        $('.products-item').removeClass('products-item--list');
+    });
+
     //JQueryFormStyler
 
     $('.select-style').styler();
