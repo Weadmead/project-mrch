@@ -1,5 +1,21 @@
 $(function () {
 
+
+    //map
+
+    let map;
+
+    async function initMap() {
+        const { Map } = await google.maps.importLibrary("maps");
+        map = new Map(document.getElementById("map"), {
+            center: { lat: 40.732878756471514, lng: -73.91856955342863 },
+            zoom: 12,
+             
+        });
+    }
+
+    initMap();
+
     //blog-page slider
 
     $('.blog-page__slider').slick({
